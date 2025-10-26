@@ -1,7 +1,8 @@
 {
-  "label": "Tutorial - Extras",
+  "label": "Cẩm nang tân thủ",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Hướng dẫn chi tiết từ A-Z cho người mới bắt đầu"
   }
 }

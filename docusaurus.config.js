@@ -5,27 +5,21 @@ const {themes} = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Tài liệu của tôi',
-  tagline: 'Chào mừng đến với tài liệu của tôi',
-  favicon: 'img/favicon.ico',
-
+  title: 'RGame Docs',
+  tagline: (
+  '<span style="color: #a78bfa; font-weight: bold;">RgameV</span> là một trò chơi cho phép bạn hòa mình vào một vũ trụ ảo và đóng vai trò bạn chọn, tuân theo các quy tắc tương tự như đời thực. Trở thành chính trị gia, gangster, doanh nhân, tài xế taxi, công nhân nhà máy, cảnh sát hoặc bất kỳ vai trò nào khác. Không có giới hạn, bạn tự do chọn con đường của mình và tạo nên câu chuyện riêng trong thế giới ảo này!'
+  ),
+  favicon: 'img/rgamelogo.png',
   // Set the production url of your site here
   url: 'https://v-rgame.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/docs/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'v-rgame', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  organizationName: 'v-rgame',
+  projectName: 'docs',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is in Chinese, you may
-  // want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'vi',
     locales: ['vi'],
@@ -38,17 +32,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/v-rgame/docs/tree/main/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/v-rgame/docs/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -60,52 +46,32 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Tài liệu của tôi',
+        title: 'RGame Docs',
         logo: {
-          alt: 'Logo',
-          src: 'img/logo.svg',
+          alt: 'RGame Logo',
+          src: 'img/rgamelogo.png', // Đổi thành logo của anh
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tài liệu',
+            label: 'Cài đặt và Cẩm nang',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/v-rgame/docs',
-            label: 'GitHub',
+            type: 'docSidebar',
+            sidebarId: 'nghiepVuSidebar', // Cần tạo sidebar mới
+            position: 'left',
+            label: 'Nghề nghiệp và Tính năng',
+          },
+          {
+            href: 'https://www.youtube.com/watch?v=aZrt3XF45Nw',
+            label: 'Video Hướng dẫn',
             position: 'right',
           },
         ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Tài liệu',
-            items: [
-              {
-                label: 'Bắt đầu',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Cộng đồng',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/v-rgame/docs',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} V-RGame. Built with Docusaurus.`,
       },
       prism: {
         theme: themes.github,

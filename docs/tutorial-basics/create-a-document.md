@@ -2,56 +2,62 @@
 sidebar_position: 2
 ---
 
-# Create a Document
+# Cấu Hình Máy Tối Thiểu
 
-Documents are **groups of pages** connected through:
+## Đối với Desktop và Laptop có card rời
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+**Yêu cầu cấu hình máy tối thiểu để tham gia server**
 
-## Create your first Doc
+### 🖥️ YÊU CẦU CẤU HÌNH TỐI THIỂU ĐỂ CHƠI SERVER:
 
-Create a Markdown file at `docs/hello.md`:
+- **CPU:** Tối thiểu Intel i5 / Ryzen 3 trở lên
+- **RAM:** 8GB trở lên
+- **GPU:** GTX 1050 / RX 560 trở lên
+- **SSD:** Tối thiểu 120GB trống
+- **Internet:** Tối thiểu 100Mbps – ưu tiên dùng dây mạng
+- **Đảm bảo** chơi ổn định 60FPS, không crash HUD/UI custom và resource của server.
+- **Phần lớn** máy chủ ưu tiên giao tiếp bằng voice, hãy trang bị mic/headphone đầy đủ để đáp ứng tất cả tình huống
 
-```md title="docs/hello.md"
-# Hello
+## Đối với Desktop và Laptop card onboard
 
-This is my **first Docusaurus document**!
-```
+**Yêu cầu cấu hình tối thiểu để tham gia máy chủ**
 
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
+- **CPU:** Tối Thiểu i5-8265U / Hoặc cao hơn
+- **RAM:** 16GB trở lên
+- **GPU onboard:** Intel (R) UHD Graphics 620 (UHD Graphics Family)
+- **Internet:** tối thiểu 55Mbps trở lên - ưu tiên dùng dây mạng
 
-## Configure the Sidebar
+:::warning Lưu ý quan trọng
+Đối với cấu hình này chỉ có thể chơi tạm một thời gian ngắn, không thể chơi dài lâu vì máy chủ sẽ cập nhật nội dung liên tục, rất có thể sẽ ảnh hưởng đến một số PC/Laptop yếu sau này. Vì vậy BQT RGAME khuyến khích các bạn nên có cấu hình tầm trung hay cao hơn để chơi, hoặc ít nhất là có card rời và chip đủ khỏe.
 
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
+**Cấu hình này BQT không đảm bảo bạn có thể chơi được mượt mà**, và chỉ dành cho những bạn nào không có điều kiện mua máy tính, mà mong muốn tham gia máy chủ thì hãy sử dụng cấu hình này để chơi.
+:::
 
-Add metadata to customize the sidebar label and position:
+## ⚠️ Lưu ý khi chơi với cấu hình thấp
 
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: 'Hi!'
-sidebar_position: 3
----
+Khi chơi cấu hình này, các bạn vui lòng **chỉnh cấu hình game về thấp nhất (normal)** để tránh bị crash, treo máy. Xin lưu ý!
 
-# Hello
+## 🎮 Cài đặt cấu hình game thấp nhất
 
-This is my **first Docusaurus document**!
-```
+Xin hãy làm theo các bước sau nếu bạn thật sự muốn chơi:
 
-It is also possible to create your sidebar explicitly in `sidebars.js`:
+### Bước 1: Mở cài đặt đồ họa trong game
+![Cài đặt đồ họa](/img/img1.png)
 
-```js title="sidebars.js"
-export default {
-  tutorialSidebar: [
-    'intro',
-    // highlight-next-line
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-};
-```
+### Bước 2: Chỉnh tất cả về mức Normal hoặc Low
+![Chỉnh cấu hình thấp](/img/img2.png)
+
+### Các tuỳ chọn quan trọng cần tắt/giảm:
+- **Texture Quality:** Normal
+- **Shadow Quality:** Normal hoặc Off
+- **Reflection Quality:** Normal
+- **Water Quality:** Normal
+- **Particles Quality:** Normal
+- **Grass Quality:** Normal
+- **Soft Shadows:** Off
+- **Post FX:** Normal
+- **Motion Blur Strength:** 0%
+- **Depth of Field:** Off
+- **Anisotropic Filtering:** Off
+- **Ambient Occlusion:** Off
+- **Tessellation:** Off

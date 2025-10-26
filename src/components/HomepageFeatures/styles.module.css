@@ -5,7 +5,9 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureImg {
+  height: 280px;
+  width: 280px;
+  max-width: 100%;
+  object-fit: contain;
 }

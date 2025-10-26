@@ -2,42 +2,31 @@
 sidebar_position: 1
 ---
 
-# Create a Page
+# Hướng dẫn tải và cài đặt
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
+## Bước 1: Tải game (Nếu bạn chưa có game)
 
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
+- **Tải và cài đặt RevoltG**, link download tại [Trang chủ RevoltG](https://revolt.vn/), hoặc download trực tiếp tại [đây](https://dl.revolt.vn/RevoltG.Installer.exe)
+- **Tạo tài khoản RevoltG** trên ứng dụng vừa cài đặt, đăng nhập
+- **Tìm "RGAME"** trên thanh tìm kiếm của ứng dụng RevoltG
+- **Click "Chơi ngay"** trên ứng dụng RevoltG
+- **Tải "Grand Theft Auto V Legacy"** về máy
 
-## Create your first React Page
+:::danger Lưu ý quan trọng
+Các bản game Crack, không rõ nguồn gốc sẽ gặp lỗi khi tham gia máy chủ. Vui lòng xoá toàn bộ folder game cũ thủ công và tải lại (Uninstall game của Steam/ Epic không thể xoá các file crack có trong folder game cũ)
+:::
 
-Create a file at `src/pages/my-react-page.js`:
+## Bước 2: Tải launcher
 
-```jsx title="src/pages/my-react-page.js"
-import React from 'react';
-import Layout from '@theme/Layout';
+- **Download tại** [Trang chủ RGame](https://v.rgame.network/), hoặc trực tiếp tại [đây](https://v.rgame.network/RGameLauncher.exe)
+- **Ném Launcher ra desktop** hoặc tạo thư mục rồi bỏ vào
+- **Chạy Launcher** sau đó dẫn vào thư mục chứa GTAV
+- **Chạy Launcher lần nữa** và chờ nó load
+- **Bấm vào "Kết nối máy chủ chính"** (màu đỏ) để vào server
+- **Video hướng dẫn** tại [đây](https://www.youtube.com/watch?v=aZrt3XF45Nw)
 
-export default function MyReactPage() {
-  return (
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
-    </Layout>
-  );
-}
-```
 
-A new page is now available at [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page).
-
-## Create your first Markdown Page
-
-Create a file at `src/pages/my-markdown-page.md`:
-
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
-
-This is a Markdown page
-```
-
-A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
+### 📞 Hỗ trợ thêm
+Nếu gặp vấn đề khác, hãy tham gia:
+- **Discord:** [discord.gg/rgamev](https://discord.gg/rgamev)
+- **Fanpage:** [Facebook RGameV](https://www.facebook.com/rgvn2209/)

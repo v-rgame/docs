@@ -8,11 +8,33 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Đổi màu chữ thành trắng để dễ đọc */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Thêm bóng cho chữ */
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Lớp phủ tối để chữ dễ đọc */
+  z-index: 1;
+}
+
+.heroBanner > * {
+  position: relative;
+  z-index: 2;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
+    background-position: center center;
   }
 }
 

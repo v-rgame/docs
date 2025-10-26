@@ -2,46 +2,33 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Chào mừng đến với RGameV
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**RGameV** - Máy chủ GTA V Roleplay Việt Nam chính thức, nơi bạn có thể sống cuộc đời thứ hai trong thế giới mở rộng lớn.
 
-## Getting Started
+## Thông tin máy chủ
 
-Get started by **creating a new site**.
+- **Tên máy chủ:** GTA-V RGame
+- **Trang chủ chính thức:** [https://v.rgame.network](https://v.rgame.network)
+- **Discord:** [discord.gg/rgamev](https://discord.gg/rgamev)
+- **Fanpage:** [Facebook RGameV](https://www.facebook.com/rgvn2209/)
+- **Thời gian ra mắt:** 18h ngày 27/06/2025 ⏰
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Bắt đầu ngay
 
-### What you'll need
+### Yêu cầu hệ thống
+- **GTA V Legacy Edition** (bản quyền)
+- **Windows 10/11** 64-bit
+- **Kết nối internet** ổn định
+- **Tài khoản Rockstar Games** hợp lệ
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### Các bước cài đặt
 
-## Generate a new site
+1. **Tải xuống RGame Launcher**
+   - Truy cập [trang chủ](https://v.rgame.network)
+   - Tải file cài đặt Launcher
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+2. **Cài đặt Launcher**
+   ```bash
+   # Chạy file RGame-Launcher.exe
+   # Làm theo hướng dẫn trong trình cài đặt

@@ -4,42 +4,43 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'RgameV là gì ?',
+    imageUrl: require('@site/static/img/homepage1.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        RgameV là một dự án độc đáo dựa trên GTA V, cho phép hàng ngàn người chơi tương tác với nhau trực tiếp
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Làm thế nào để bắt đầu trên RGameV?',
+    imageUrl: require('@site/static/img/homepage2.png').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Đầu tiên bạn cần tải xuống GTA V Legacy bản quyền sau đó cài đặt RGame Launcher
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Tôi có thể làm gì trên máy chủ?',
+    imageUrl: require('@site/static/img/homepage3.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Ngoài việc có một lựa chọn lớn các công việc và tương tác giữa người chơi, chúng tôi có cập nhật thường xuyên và các sự kiện theo mùa
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({imageUrl, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img 
+          src={imageUrl} 
+          className={styles.featureImg} 
+          alt={title} 
+        />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
